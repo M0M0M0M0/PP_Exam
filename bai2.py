@@ -16,7 +16,7 @@ df2=pd.read_csv("data.csv")
 print(df2.to_string())
 
 print(f"\nCac san pham co gia lon hon 100 la:")
-print(df[df2["price"] > 100].to_string(index=False))
+print(df[df["price"] > 100].to_string(index=False))
 
 df["total"] = df["price"] * df["quantity"]
 total_value = df["total"].sum()
